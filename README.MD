@@ -15,15 +15,15 @@ $ cd  'klaytn repository folder'
 $ docker  build  -t  <TagName>  . 
 ```
 
-## Starting the Klaytn 
+## Generate docker-compose file
 Execute the following script:
 
 ```bash
 $ ./generateDockerCompose.sh
 ```
 
-### Chainging parameters
-You can change two parameters in `1.prepare.sh`.
+### Changing parameters
+You can change the following parameters in `generateDockerCompose.sh`.
 
 | Parameter | Description |
 |---|---|
@@ -31,12 +31,12 @@ You can change two parameters in `1.prepare.sh`.
 |SCHAIN_ID| The service-chain ID of the deployed chain. (Default:2000) |
 |NETWORK_ID| The network ID of the deployed chain. (Default:203) |
 |NUM_CNS| Number of CNs of the network. (Default:1) |
-|NUM_PNS| Number of PNs of the network. (Default:1) |
-|NUM_ENS| Number of ENs of the network. (Default:1) |
-|NUM_SCNS| Number of SCNs of the network. (Default:1) |
+|NUM_PNS| Number of PNs of the network. (Default:0) |
+|NUM_ENS| Number of ENs of the network. (Default:0) |
+|NUM_SCNS| Number of SCNs of the network. (Default:0) |
 
 ## Edit docker-compose file and execute the docker.
-Update docker-compose.yml with <TagName> and account info. 
+Update the docker image <TagName> and account info in `docker-compose.yml`.
 
 ```bash
 $ docker-compose up
