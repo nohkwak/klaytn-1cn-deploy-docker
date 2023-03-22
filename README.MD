@@ -36,7 +36,7 @@ You can change the following parameters in `generateDockerCompose.sh`.
 |NUM_SCNS| Number of SCNs of the network. (Default:0) |
 
 ## Edit docker-compose file and execute the docker.
-Update the docker image <TagName> and account info in `docker-compose.yml`.
+Update `<TagName>` of the docker image and account info in `docker-compose.yml`.
 
 ```bash
 $ docker-compose up
