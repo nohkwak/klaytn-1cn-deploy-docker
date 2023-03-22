@@ -20,7 +20,7 @@ services:
         echo 'DATA_DIR="/klaytn"' >> /klaytn-docker-pkg/conf/kcnd.conf
         echo 'LOG_DIR="$$DATA_DIR/log"' >> /klaytn-docker-pkg/conf/kcnd.conf
         echo 'RPC_ENABLE=1' >> /klaytn-docker-pkg/conf/kcnd.conf
-        echo 'RPC_API="db,eth,klay,net,web3,miner,personal,txpool,debug,admin,istanbul,mainbridge,subbridge"' >> /klaytn-docker-pkg/conf/kcnd.conf
+        echo 'RPC_API="db,eth,klay,net,web3,miner,personal,txpool,debug,admin,istanbul,mainbridge,subbridge,governance"' >> /klaytn-docker-pkg/conf/kcnd.conf
         echo 'NETWORK_ID="203"' >> /klaytn-docker-pkg/conf/kcnd.conf
         echo 'NO_DISCOVER=1' >> /klaytn-docker-pkg/conf/kcnd.conf
         echo 'ADDITIONAL="$$ADDITIONAL --identity \"CN-0\""' >> /klaytn-docker-pkg/conf/kcnd.conf
