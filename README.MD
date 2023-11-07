@@ -1,4 +1,4 @@
-# Deploying Klaytn local Network with 1CN
+# Deploying Klaytn 1CN with Docker
 
 ## Prerequisites
 Following packages are required.
